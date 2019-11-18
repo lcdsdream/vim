@@ -4,7 +4,7 @@
 
 直接使用apt-get安装的版本比较低，建议使用官网源码编译
 [gnu global](https://www.gnu.org/software/global/download.html)
-
+自己测试使用版本是 6.6.3, 6.0 时发现 label 查找不到 native-pygments
 
 ### 编译依赖
 ```bash
@@ -62,7 +62,7 @@ let $GTAGSCONF = '/usr/local/share/gtags/gtags.conf'
 ```
 第一个 GTAGSLABEL 告诉 gtags 默认 C/C++/Java 等六种原生支持的代码直接使用 gtags 本地分析器，而其他语言使用 pygments 模块。
 第二个参数设置的路径根据实际安装(find / -iname gtags.conf),默认是上面那个。
-
+版本过低的gtags  conf 可能找不到对应 label，所以推荐使用 6.6.3
 
 ---
 
