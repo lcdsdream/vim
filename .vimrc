@@ -537,7 +537,10 @@ else  " vim8  支持异步
     ":messages
     let g:gutentags_define_advanced_commands = 1
 
-" ------------------------------------------------------ vim8 异步支持 end
+    " rust 支持
+    Plug 'rust-lang/rust.vim'
+    let g:rustfmt_autosave = 1
+    "------------------------------------------------------ vim8 异步支持 end
 endif
 
 
