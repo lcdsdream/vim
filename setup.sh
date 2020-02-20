@@ -17,8 +17,9 @@ elif which yum >/dev/null; then
 	#sudo pip install   --proxy=xxx
     	sudo pip install pygments
 elif which brew >/dev/null; then
-	brew install ctags cscope  tmux git astyle cmake 
-	brew install python@2 python@3  
+    brew install vim
+	brew install ctags cscope  tmux git astyle cmake
+	brew install python@2 python@3
 	brew install cppcheck  flake8 shellcheck
 	pip install pylink-square
 	pip install flake8
@@ -29,7 +30,7 @@ elif which brew >/dev/null; then
 
 	## mac can auto install global and ctags
 	brew install global
-	bnrew unlink ctags
+	brew unlink ctags
 	brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 fi
 

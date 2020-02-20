@@ -134,6 +134,9 @@ let g:gutentags_define_advanced_commands = 1
 * 状态栏显示问题
 设置字体库
 ```bash
+git clone git@github.com:powerline/fonts.git
+cd fonts & sh ./install.sh
+或者：
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
 mv ./PowerlineSymbols.otf /usr/share/fonts/

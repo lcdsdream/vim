@@ -14,14 +14,14 @@ set softtabstop=4 "统一缩进为
 set shiftwidth=4
 set expandtab "使用空格代替制表符
 "set noexpandtabp "不使用空格代替制表符
-" set expandtab后，设置smarttab，在删除tab（4个空格）只需以下Backspace
+"set expandtab后，设置smarttab，在删除tab（4个空格）只需一下Backspace
 set smarttab
 
 set langmenu=zh_CN.UTF-8 "语言设置
 "set lbr "自动断行
 "set fo+=mB
 
-" close the noise bell
+"close the noise bell
 set vb t_vb=
 
 function! Set_index_4()
@@ -467,7 +467,7 @@ else  " vim8  支持异步
     let g:ale_lint_delay = 500
     let g:ale_echo_msg_format = '[%linter%] %code: %%s'
     let g:ale_lint_on_text_changed = 'normal'
-    let g:ale_lint_on_insert_leave = 1
+    let g:ale_lint_on_insert_leave = 0
     let g:airline#extensions#ale#enabled = 1
     let g:ale_java_javac_options = '-encoding UTF-8  -J-Duser.language=en' "java在中文系统提示中文乱码问题
     "let g:ale_set_quickfix = 1
@@ -512,7 +512,7 @@ else  " vim8  支持异步
     let g:gutentags_cache_dir = expand('~/.cache/tags')
 
     " 配置 ctags 的参数
-    let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+    let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
     let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
     let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
@@ -547,7 +547,7 @@ endif
 "python 自动缩进
 Plug 'vim-scripts/indentpython.vim', {'for': ['py','python']}
 "换行格式化
-Plug 'sillybun/autoformatpythonstatement', {'do':'./install.sh'}
+"Plug 'sillybun/autoformatpythonstatement', {'do':'./install.sh'}
 "PEP8代码风格检查
 "需要安装flake8
 Plug 'nvie/vim-flake8', {'for': ['py','python']}
@@ -568,8 +568,7 @@ let g:cpp_no_function_highlight = 1
 "
 " auto complete can use YouCompleteMe or tabnine-vim
 "
-Plug 'zxqfl/tabnine-vim'
-"Plug 'Valloric/YouCompleteMe', {'do':'./install.py --clang-completer --go-completer --java-completer'}
+Plug 'Valloric/YouCompleteMe', {'do':'./install.py --clang-completer --go-completer --java-completer'}
 set completeopt=menu,menuone "关闭自动弹出的函数说明窗口
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_show_diagnostics_ui = 0
