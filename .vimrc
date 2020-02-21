@@ -568,6 +568,7 @@ let g:cpp_no_function_highlight = 1
 "
 " auto complete can use YouCompleteMe or tabnine-vim
 "
+"Plug 'zxqfl/tabnine-vim'
 Plug 'Valloric/YouCompleteMe', {'do':'./install.py --clang-completer --go-completer --java-completer'}
 set completeopt=menu,menuone "关闭自动弹出的函数说明窗口
 let g:ycm_add_preview_to_completeopt = 0
