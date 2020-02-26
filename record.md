@@ -136,6 +136,7 @@ let g:gutentags_define_advanced_commands = 1
 ```bash
 git clone git@github.com:powerline/fonts.git
 cd fonts & sh ./install.sh
+之后终端字体设置为xx for powerline,iTerm2 和 vscode 终端字体建议 Source Code Pro for Powerline
 或者：
 wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
 wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
